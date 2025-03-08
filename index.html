@@ -9,18 +9,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="container">
-            <h1><i class="fa-solid fa-briefcase"></i> QuickHire Employment Agency</h1>
+            <div class="logo">
+                <img src="logo.png" alt="QuickHire Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="banner">
+        <div class="banner-content">
+            <h1>QuickHire Employment Agency</h1>
             <p>Connecting Top Talent with Great Companies</p>
             <a href="#contact" class="btn"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
         </div>
     </header>
 
     <section id="about" class="section">
-        <div class="container">
-            <h2><i class="fa-solid fa-users"></i> About Us</h2>
-            <p>We are a trusted staffing agency specializing in matching job seekers with the right employers.</p>
+        <div class="container three-columns">
+            <div class="column">
+                <i class="fa-solid fa-users icon"></i>
+                <h3>About Us</h3>
+                <p>We are a trusted staffing agency specializing in matching job seekers with the right employers.</p>
+            </div>
+            <div class="column">
+                <i class="fa-solid fa-handshake icon"></i>
+                <h3>Why Choose Us?</h3>
+                <p>Our expertise and connections help professionals land their dream jobs quickly.</p>
+            </div>
+            <div class="column">
+                <i class="fa-solid fa-briefcase icon"></i>
+                <h3>Opportunities</h3>
+                <p>We offer career opportunities in multiple industries, from entry-level to executive roles.</p>
+            </div>
         </div>
     </section>
 
@@ -62,5 +89,16 @@
     <footer>
         <p>© 2025 QuickHire Employment Agency</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
