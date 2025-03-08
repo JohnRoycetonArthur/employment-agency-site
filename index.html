@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickHire - Employment Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fa-solid fa-briefcase"></i> QuickHire Employment Agency</h1>
+            <p>Connecting Top Talent with Great Companies</p>
+            <a href="#contact" class="btn"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2><i class="fa-solid fa-users"></i> About Us</h2>
+            <p>We are a trusted staffing agency specializing in matching job seekers with the right employers.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2><i class="fa-solid fa-briefcase"></i> Our Services</h2>
+            <div class="service-list">
+                <div class="service-box"><i class="fa-solid fa-user-tie"></i> Permanent & Temporary Staffing</div>
+                <div class="service-box"><i class="fa-solid fa-people-arrows"></i> Job Matching & Career Coaching</div>
+                <div class="service-box"><i class="fa-solid fa-file"></i> Resume Building & Interview Prep</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs" class="section">
+        <div class="container">
+            <h2><i class="fa-solid fa-clipboard-list"></i> Job Listings</h2>
+            <ul class="job-list">
+                <li><i class="fa-solid fa-location-dot"></i> Front Desk Associate - Toronto</li>
+                <li><i class="fa-solid fa-box"></i> Warehouse Worker - Mississauga</li>
+                <li><i class="fa-solid fa-laptop"></i> IT Support Specialist - Remote</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2><i class="fa-solid fa-address-book"></i> Contact Us</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="file" name="resume">
+                <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 QuickHire Employment Agency</p>
+    </footer>
+</body>
+</html>
